@@ -38,3 +38,10 @@ Be careful when naming your scripts that you do not use the same name as any Win
 e.g. a script name `env.bat` would be called when typing `env` instead of the Cmder `env` function which lists environment variables.
 
 You could avoid this problem by prefixing your scripts with a common character e.g. an underscore.
+
+
+## Other resources
+
+[Microsoft's tips and guidelines for setting up a Node.js development environment on Windows](https://github.com/Microsoft/nodejs-guidelines/blob/master/windows-environment.md#configuring-your-windows-development-environment)
+
+[The easiest way to install dependencies for compiling native Node modules on Windows](https://github.com/felixrieseberg/windows-build-tools)
