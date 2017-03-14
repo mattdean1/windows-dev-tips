@@ -12,6 +12,10 @@ IF "%1" == "list" (
 IF "%1" == "set" (
     set HTTP_PROXY=http://<domain>:<port>
     set HTTPS_PROXY=http://<domain>:<port>
+
+    set npm_config_proxy=http://<domain>:<port>
+    set npm_config_https-proxy=http://<domain>:<port>
+
     echo. && echo Info: Set proxy environment variables
     echo Hint: Use '%~n0 list' to see the current values of the variables
     GOTO :EOF
@@ -21,6 +25,12 @@ IF "%1" == "set" (
 IF "%1" == "unset" (
     set HTTP_PROXY=
     set HTTPS_PROXY=
+
+    set npm_config_proxy=
+    set npm_config_https-proxy=
+    npm config rm proxy
+    npm config rm https-proxy
+
     echo. && echo Info: Unset proxy environment variables
     GOTO :EOF
 )
@@ -56,8 +66,10 @@ GOTO :EOF
     )
 
     :: Set environment vars
-    set HTTP_PROXY=http://c237549:%password%@<domain>:<port>
-    set HTTPS_PROXY=http://c237549:%password%@<domain>:<port>
+    set HTTP_PROXY=http://<username>:%password%@<domain>:<port>
+    set HTTPS_PROXY=http://<username>:%password%@<domain>:<port>
+    set npm_config_proxy=http://<username>:%password%@<domain>:<port>
+    set npm_config_https-proxy=http://<username>:%password%@<domain>:<port>
 
     :: Unset password var
     set password=
