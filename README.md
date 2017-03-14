@@ -14,7 +14,7 @@ This repo contains a collection of useful information, links, scripts, and other
 
 ## Scripts
 
-### Setup
+#### Setup
 
 Scripts are a fantastic way to automate common tasks and save time. One way to have easy access to scripts is add a `scripts` directory to your PATH.
 
@@ -24,20 +24,22 @@ Scripts are a fantastic way to automate common tasks and save time. One way to h
 
 You could clone this repo and add the `scripts` folder to your PATH using the instructions above - replace `C:/Users/<username>/scripts` with the path to the folder.
 
-### Usage
+#### Usage
 
 Run scripts by simply typing the name of script, for example:
 
 For a script named `script.bat` type `script`
 
 
-### Naming
+#### Naming
 
 Be careful when naming your scripts that you do not use the same name as any Windows or Cmder commands - it could overwrite them!
 
 e.g. a script name `env.bat` would be called when typing `env` instead of the Cmder `env` function which lists environment variables.
 
 You could avoid this problem by prefixing your scripts with a common character e.g. an underscore.
+
+
 
 
 ## Other resources
