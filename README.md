@@ -47,3 +47,9 @@ You could avoid this problem by prefixing your scripts with a common character e
 [Microsoft's tips and guidelines for setting up a Node.js development environment on Windows](https://github.com/Microsoft/nodejs-guidelines/blob/master/windows-environment.md#configuring-your-windows-development-environment)
 
 [The easiest way to install dependencies for compiling native Node modules on Windows](https://github.com/felixrieseberg/windows-build-tools)
+
+[An easy way to upgrade NPM](https://github.com/felixrieseberg/npm-windows-upgrade)
+
+[A complete guide to setting up a modern developer environment on windows](https://github.com/felixrieseberg/windows-development-environment)
+
+
