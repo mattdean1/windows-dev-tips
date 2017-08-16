@@ -39,7 +39,11 @@ e.g. a script name `env.bat` would be called when typing `env` instead of the Cm
 
 You could avoid this problem by prefixing your scripts with a common character e.g. an underscore.
 
+## .gitattributes
 
+On Windows, git checks out files with 'Windows' (CLRF) line endings by default. This sometimes shows up as ESLint errors in Atom which can be annoying. To fix this, add the `.gitattributes` file in the root of your project, which ensures Git will checkout JS files with the correct (LF) line endings.
+
+You may need to re-checkout the files to pick up the change.
 
 
 ## Other resources
